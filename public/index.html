@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Higher Value</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="mute" class="mute" type="button" aria-label="Mute sounds" title="Mute sounds"></button>
+
+  <main id="home" class="view active">
+    <h1 class="logo">Higher<span>Value</span></h1>
+    <p class="tagline">Who's worth more?</p>
+    <button id="play" class="btn">Play</button>
+    <p class="best">Best streak: <b id="best-home">0</b></p>
+  </main>
+
+  <main id="game" class="view">
+    <header class="hud">
+      <button id="home-btn" class="link">&larr; Home</button>
+      <div>Score <b id="score">0</b></div>
+      <div>Best <b id="best">0</b></div>
+    </header>
+    <p class="prompt">Click the player with the <strong>higher</strong> market value</p>
+    <div class="arena">
+      <button class="card" id="card-0" type="button">
+        <div class="photo"><img alt="" referrerpolicy="no-referrer"></div>
+        <div class="name"></div>
+        <div class="club"></div>
+        <div class="value"></div>
+      </button>
+      <div class="vs">VS</div>
+      <button class="card" id="card-1" type="button">
+        <div class="photo"><img alt="" referrerpolicy="no-referrer"></div>
+        <div class="name"></div>
+        <div class="club"></div>
+        <div class="value"></div>
+      </button>
+    </div>
+    <p id="status" class="status" aria-live="polite"></p>
+  </main>
+
+  <div id="lost" class="overlay" hidden>
+    <div class="modal">
+      <h2>You lost</h2>
+      <p>Final score: <b id="final">0</b></p>
+      <p class="muted">Best: <b id="final-best">0</b></p>
+      <div class="actions">
+        <button id="again" class="btn">Play again</button>
+        <button id="to-home" class="btn ghost">Home</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>Values from Transfermarkt via <a href="https://github.com/dcaribou/transfermarkt-datasets" target="_blank" rel="noopener">transfermarkt-datasets</a> (unofficial, may be slightly outdated).</footer>
+  <script src="app.js"></script>
+</body>
+</html>

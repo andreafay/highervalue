@@ -1,0 +1,11 @@
+{
+  "name": "higher-value",
+  "version": "1.0.0",
+  "description": "Higher Value - guess which football player has the higher Transfermarkt market value",
+  "private": true,
+  "scripts": {
+    "build:data": "node scripts/build-players.js",
+    "start": "node server.js"
+  },
+  "engines": { "node": ">=18" }
+}
