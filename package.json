@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "build:data": "node scripts/build-players.js",
-    "start": "node server.js"
+    "start": "node dev/server.js"
   },
   "engines": { "node": ">=18" }
 }
